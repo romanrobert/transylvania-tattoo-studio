@@ -1,0 +1,71 @@
+.artists {
+  width: 80%;
+  margin: auto;
+
+  h3 {
+    margin: 5rem 0rem;
+    text-align: end;
+  }
+
+  li {
+    color: black;
+  }
+}
+
+.artists-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artists-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 3rem;
+  h5 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+  }
+  p {
+    margin-top: 1rem;
+    text-align: center;
+    width: 80%;
+    line-height: 1.4rem;
+  }
+}
+
+.artists-button {
+  margin: 5rem 0rem;
+  width: 15rem;
+  height: 6.2rem;
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+  right: 80%;
+  font-size: 1.6rem;
+}
+
+@media screen and(max-width: 782px) {
+  .artists h3 {
+    text-align: center;
+  }
+  .artists-list {
+    flex-wrap: wrap;
+  }
+
+  .card-info {
+    margin: 2rem 0rem;
+  }
+}

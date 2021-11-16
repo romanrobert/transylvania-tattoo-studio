@@ -1,0 +1,115 @@
+.faq {
+  background-color: #0b0d17;
+  color: white;
+  min-height: 100vh;
+}
+
+.faq-head {
+  text-align: center;
+  padding: 7rem 0rem;
+}
+
+.accordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  margin: auto;
+}
+
+.accordion .content-box {
+  position: relative;
+  margin: 1.2rem 20px;
+}
+
+.accordion .content-box .label {
+  position: relative;
+  padding: 1.5rem;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-family: "roboto", sans-serif;
+}
+
+.accordion .content-box .label.active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transform: 0.5s;
+}
+
+.accordion .content-box .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+.accordion .content-box.active .label::before {
+  content: "-";
+  font-size: 1.5rem;
+}
+
+.accordion .content-box .content {
+  position: relative;
+
+  background-color: white;
+  color: black;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  p {
+    font-size: 1.4rem;
+    font-family: "roboto", sans-serif;
+  }
+}
+
+.accordion .content-box.active .content {
+  height: 10rem;
+  padding: 1rem;
+  padding-top: 3rem;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  p {
+    max-width: 90%;
+    margin: auto;
+    line-height: 2rem;
+  }
+}
+
+.faq-button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem 0rem;
+  margin: 5rem 0rem;
+
+  width: 22rem;
+  height: 5.6rem;
+  background-color: #0b0d17;
+  border: 1px solid $white;
+  cursor: pointer;
+  color: $white;
+  border-radius: 0.8rem;
+  transition: 0.5s ease-in-out;
+}
+
+.faq-button:hover {
+  background-color: white;
+  color: $black;
+}
+
+@media screen and(max-width: 782px) {
+  .faq-head {
+    padding: 3rem 0rem;
+  }
+
+  .accordion {
+    width: 90%;
+    margin: auto;
+  }
+}

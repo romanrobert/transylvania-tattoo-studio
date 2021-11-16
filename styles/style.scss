@@ -1,0 +1,31 @@
+/* Font Size Variables */
+
+$header1: 7.2rem;
+$header2: 4.8rem;
+$header3: 4rem;
+$header4: 2.8rem;
+$header5: 2.4rem;
+$header6: 2rem;
+
+$text1: 1.8rem;
+$text2: 1.4rem;
+$cardtext: 1.6rem;
+
+/* Colors */
+
+$black: #212121;
+$red: #ed0000;
+$gray: #c4c4c4;
+$white: #ffffff;
+
+@import "_global";
+@import "_nav";
+@import "_hero";
+@import "_about";
+@import "_services";
+@import "_work";
+@import "_testimonials";
+@import "_artists";
+@import "_faq";
+@import "_prefoot";
+@import "_footer";

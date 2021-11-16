@@ -1,0 +1,94 @@
+.recent-work {
+  width: 80%;
+  margin: auto;
+}
+
+.recent-head {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.recent-gallery {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "img1 img2 img2"
+    "img1 img3 img4"
+    "img5 img5 img4"
+    "img5 img5 img6";
+  justify-content: center;
+}
+
+.recent-img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img1;
+}
+
+.recent-img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img2;
+}
+
+.recent-img3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img3;
+}
+
+.recent-img4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img4;
+}
+
+.recent-img5 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img5;
+}
+
+.recent-img6 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img6;
+}
+
+.gallery-button {
+  cursor: pointer;
+  width: 17.4rem;
+  height: 6.2rem;
+  border: 1px solid black;
+  background-color: $white;
+  margin: 3rem 0rem;
+  align-self: flex-end;
+  margin-left: 85%;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-button:hover {
+  background-color: $black;
+  color: white;
+}
+
+@media screen and(max-width: 782px) {
+  .recent-gallery {
+    margin-top: 5rem;
+  }
+  .gallery-button {
+    margin-left: auto;
+    width: 9rem;
+    height: 3rem;
+  }
+}

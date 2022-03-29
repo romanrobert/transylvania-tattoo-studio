@@ -1,22 +1,22 @@
 /* Font Size Variables */
 
-$header1: 7.2rem;
-$header2: 4.8rem;
-$header3: 4rem;
-$header4: 2.8rem;
-$header5: 2.4rem;
-$header6: 2rem;
+$header1: 5.25rem;
+$header2: 4.5rem;
+$header3: 3rem;
+$header4: 2.25rem;
 
-$text1: 1.8rem;
-$text2: 1.4rem;
-$cardtext: 1.6rem;
+$text-big: 1.125;
+$text-small: 1rem;
+$text-a: 0.875rem;
 
 /* Colors */
 
-$black: #212121;
-$red: #ed0000;
-$gray: #c4c4c4;
-$white: #ffffff;
+$bg: #262626;
+$primary: #31fd3f;
+$text-light: #c4c4c4;
+$text-medium: #a8a8a8;
+$text-dark: #929292;
+$text-vd: #7d7d7d;
 
 @import "_global";
 @import "_nav";
